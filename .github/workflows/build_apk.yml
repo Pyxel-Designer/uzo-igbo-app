@@ -55,10 +55,12 @@ jobs:
           echo "storeFile=app/keystore/upload-keystore.jks" >> android/key.properties
 
       - name: Build Standalone Release APK
-        run: flutter build apk --release
+        run: |
+          flutter build apk --release -v
 
       - name: Build Google Play App Bundle (.aab)
-        run: flutter build appbundle --release
+        run: |
+          flutter build appbundle --release
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
