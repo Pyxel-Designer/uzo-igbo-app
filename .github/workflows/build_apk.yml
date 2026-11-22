@@ -5,7 +5,7 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
-  workflow_dispatch: # Allows manual trigger with one click in GitHub Actions
+  workflow_dispatch:
 
 jobs:
   build:
@@ -22,11 +22,10 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Set up Flutter 3.x
+      - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
-          cache: true
 
       - name: Install Dependencies
         run: flutter pub get
@@ -50,13 +49,10 @@ jobs:
               -keypass "UzoIgboPlayStore2026!" \
               -dname "CN=Uzo Igbo, OU=Mobile, O=Uzo Igbo Language, L=Enugu, ST=Enugu, C=NG"
           fi
-
-          cat <<EOF > android/key.properties
-          storePassword=UzoIgboPlayStore2026!
-          keyPassword=UzoIgboPlayStore2026!
-          keyAlias=uzo_upload_key
-          storeFile=app/keystore/upload-keystore.jks
-          EOF
+          echo "storePassword=UzoIgboPlayStore2026!" > android/key.properties
+          echo "keyPassword=UzoIgboPlayStore2026!" >> android/key.properties
+          echo "keyAlias=uzo_upload_key" >> android/key.properties
+          echo "storeFile=app/keystore/upload-keystore.jks" >> android/key.properties
 
       - name: Build Standalone Release APK
         run: flutter build apk --release
