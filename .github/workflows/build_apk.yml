@@ -11,6 +11,8 @@ jobs:
   build:
     name: Build Signed Android APK
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout Repository
@@ -63,12 +65,16 @@ jobs:
             exit 1
           fi
 
-      - name: Upload Error Log
+      - name: Push Error Log to Debug Branch
         if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-error-log
-          path: build_output.log
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -B debug-log
+          tail -n 120 build_output.log > BUILD_FAILURE_REASON.txt
+          git add BUILD_FAILURE_REASON.txt
+          git commit -m "Auto-capture build error log"
+          git push origin debug-log --force
 
       - name: Build Google Play App Bundle (.aab)
         run: |
