@@ -56,7 +56,19 @@ jobs:
 
       - name: Build Standalone Release APK
         run: |
-          flutter build apk --release -v
+          flutter build apk --release -v > build_output.log 2>&1 || true
+          tail -n 80 build_output.log
+          if [ ! -f "build/app/outputs/flutter-apk/app-release.apk" ]; then
+            echo "Release APK was not generated."
+            exit 1
+          fi
+
+      - name: Upload Error Log
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-error-log
+          path: build_output.log
 
       - name: Build Google Play App Bundle (.aab)
         run: |
