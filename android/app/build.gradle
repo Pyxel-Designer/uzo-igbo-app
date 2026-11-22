@@ -61,7 +61,10 @@ android {
             if (keystorePropertiesFile.exists()) {
                 keyAlias keystoreProperties['keyAlias']
                 keyPassword keystoreProperties['keyPassword']
-                storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+                def sf = keystoreProperties['storeFile']
+                if (sf) {
+                    storeFile file(sf).exists() ? file(sf) : rootProject.file(sf)
+                }
                 storePassword keystoreProperties['storePassword']
             }
         }
