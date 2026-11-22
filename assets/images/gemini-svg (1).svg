@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Simplified Duolingo-style Isiagu Pattern -->
+    <pattern id="isiagu" x="0" y="0" width="45" height="45" patternUnits="userSpaceOnUse">
+      <circle cx="22.5" cy="22.5" r="14" fill="#F4D03F" />
+      <circle cx="22.5" cy="22.5" r="9" fill="#D35400" />
+      <!-- Abstract Lion Face -->
+      <polygon points="16,18 29,18 22.5,28" fill="#873600" />
+    </pattern>
+  </defs>
+
+  <!-- Background Badge -->
+  <circle cx="200" cy="200" r="190" fill="#E3F2FD" />
+
+  <!-- Body / Torso -->
+  <g id="body">
+    <path d="M 125 250 C 125 210, 275 210, 275 250 L 290 400 L 110 400 Z" fill="#17202A" />
+    <!-- Isiagu Pattern Fill -->
+    <path d="M 125 250 C 125 210, 275 210, 275 250 L 290 400 L 110 400 Z" fill="url(#isiagu)" />
+  </g>
+
+  <!-- Neck & Coral Beads -->
+  <g id="neck-beads">
+    <rect x="175" y="190" width="50" height="60" rx="25" fill="#5D4037" />
+    <!-- Beads -->
+    <circle cx="160" cy="245" r="12" fill="#FF4B4B" />
+    <circle cx="180" cy="255" r="13" fill="#FF4B4B" />
+    <circle cx="200" cy="260" r="14" fill="#FF4B4B" />
+    <circle cx="220" cy="255" r="13" fill="#FF4B4B" />
+    <circle cx="240" cy="245" r="12" fill="#FF4B4B" />
+  </g>
+
+  <!-- Head & Face -->
+  <g id="head">
+    <!-- Face -->
+    <rect x="135" y="110" width="130" height="110" rx="45" fill="#5D4037" />
+    <!-- Ears -->
+    <circle cx="130" cy="160" r="14" fill="#4E342E" />
+    <circle cx="270" cy="160" r="14" fill="#4E342E" />
+    
+    <!-- Thick Cartoon Beard -->
+    <path d="M 125 170 C 125 250, 275 250, 275 170 C 250 200, 150 200, 125 170 Z" fill="#212121" />
+    <path d="M 160 185 Q 200 170 240 185 Q 200 205 160 185 Z" fill="#5D4037" /> <!-- Mouth cutout -->
+    
+    <!-- Smile -->
+    <path d="M 175 190 Q 200 205 225 190" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Eyes -->
+    <circle cx="170" cy="145" r="18" fill="#FFFFFF" />
+    <circle cx="173" cy="145" r="9" fill="#212121" />
+    <circle cx="175" cy="142" r="3" fill="#FFFFFF" />
+
+    <circle cx="230" cy="145" r="18" fill="#FFFFFF" />
+    <circle cx="227" cy="145" r="9" fill="#212121" />
+    <circle cx="225" cy="142" r="3" fill="#FFFFFF" />
+  </g>
+
+  <!-- Red Cap (Okpu Mmee) -->
+  <g id="cap">
+    <path d="M 145 120 L 155 60 C 158 45, 242 45, 245 60 L 255 120 Z" fill="#E53935" />
+    <rect x="142" y="110" width="116" height="15" rx="7.5" fill="#C62828" />
+  </g>
+</svg>

@@ -1,0 +1,177 @@
+{
+  "dialects": [
+    {
+      "id": "central",
+      "name": "Central Igbo (Izugbe)",
+      "region": "Standard literary standard used across schools and media",
+      "popular": true
+    },
+    {
+      "id": "anambra",
+      "name": "Anambra / Onitsha Dialect",
+      "region": "Major commercial hub spoken around Onitsha Main Market and Awka",
+      "popular": false
+    },
+    {
+      "id": "enuani",
+      "name": "Enuani (Delta Igbo)",
+      "region": "Spoken across Asaba, Ogwashi-Uku, and western bank communities",
+      "popular": false
+    },
+    {
+      "id": "imo",
+      "name": "Imo / Owerri Dialect",
+      "region": "Rich classical dialect known for active nasalized phonemes",
+      "popular": false
+    }
+  ],
+  "units": [
+    {
+      "id": "unit_1",
+      "title": "Unit 1: Ntọala & Ekele (Basics & Greetings)",
+      "description": "Essential etiquette, morning salutations, and tone marks",
+      "lessons": [
+        {
+          "id": "lesson_1_1",
+          "title": "Ekele Ụtụtụ (Morning Greetings)",
+          "type": "listening",
+          "xp": 20,
+          "content": {
+            "igbo": "Ụtụtụ ọma",
+            "english": "Good morning",
+            "phonetic": "Oo-too-too oh-mah",
+            "tone": "High - High - High - Low",
+            "culturalNote": "Always greet elders first with a slight bow or two hands extended in respect."
+          }
+        },
+        {
+          "id": "lesson_1_2",
+          "title": "Ịza Ekele (Responding to Greetings)",
+          "type": "speaking",
+          "xp": 25,
+          "content": {
+            "igbo": "Kedu ka ị mere?",
+            "response": "Adị m mma, daalụ",
+            "english": "How are you? — I am fine, thank you",
+            "phonetic": "Keh-doo kah ee meh-reh? Ah-dee m mm-ah, dah-loo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unit_2",
+      "title": "Unit 2: Ahịa Ogbete (Market Talk & Bargaining)",
+      "description": "Master negotiating prices and shopping at eastern markets",
+      "lessons": [
+        {
+          "id": "lesson_2_1",
+          "title": "Ịjụ Ọnụ Ahịa (Asking Prices)",
+          "type": "market_dialogue",
+          "xp": 35,
+          "content": {
+            "dialogue": [
+              {
+                "speaker": "Buyer",
+                "igbo": "Ego ole ka nke a bụ?",
+                "english": "How much is this one?"
+              },
+              {
+                "speaker": "Vendor",
+                "igbo": "Ọ bụ puku naịra abụọ (₦2,000).",
+                "english": "It is two thousand naira."
+              },
+              {
+                "speaker": "Buyer",
+                "igbo": "Biko, belata ọnụ ahịa ya!",
+                "english": "Please, reduce the price!"
+              },
+              {
+                "speaker": "Vendor",
+                "igbo": "Weta puku naịra na narị ise (₦1,500).",
+                "english": "Bring one thousand five hundred naira."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "toneWorkouts": [
+    {
+      "id": "tone_1",
+      "baseWord": "akwa",
+      "variations": [
+        {
+          "word": "Ákwá",
+          "toneProfile": "High-High",
+          "meaning": "Crying / Tears",
+          "example": "Nwa ahụ na-akwa ákwá (That child is crying)"
+        },
+        {
+          "word": "Àkwà",
+          "toneProfile": "Low-Low",
+          "meaning": "Bed / Bridge",
+          "example": "Dina n'elu àkwà (Lie down on the bed)"
+        },
+        {
+          "word": "Àkwá",
+          "toneProfile": "Low-High",
+          "meaning": "Egg",
+          "example": "M chọrọ àkwá abụọ (I want two eggs)"
+        },
+        {
+          "word": "Ákwà",
+          "toneProfile": "High-Low",
+          "meaning": "Cloth / Fabric",
+          "example": "Akwa George mara mma (George fabric is beautiful)"
+        }
+      ]
+    }
+  ],
+  "travelPhrases": [
+    {
+      "category": "Transit & Movement",
+      "phrases": [
+        { "igbo": "Biko, wetuo m ebe a", "english": "Please, drop me off here", "phonetic": "Bee-ko, weh-too-oh m eh-beh ah" },
+        { "igbo": "Ụzọ a ọ na-aga Enugu?", "english": "Does this road go to Enugu?", "phonetic": "Oo-zoh ah oh nah-gah Eh-noo-goo?" },
+        { "igbo": "Ego ole ka ị na-ana?", "english": "How much is your fare?", "phonetic": "Eh-goh oh-leh kah ee nah-nah?" }
+      ]
+    },
+    {
+      "category": "Food & Restaurant",
+      "phrases": [
+        { "igbo": "Enwere m agụụ", "english": "I am hungry", "phonetic": "En-weh-reh m ah-goo-oo" },
+        { "igbo": "Biko nye m Ofe Oha na Akpụ", "english": "Please give me Oha soup and fufu", "phonetic": "Bee-ko nyeh m Oh-feh Oh-hah nah Ahk-poo" },
+        { "igbo": "Mmiri oyi dị?", "english": "Is there cold water?", "phonetic": "M-mee-ree oy-ee dee?" }
+      ]
+    },
+    {
+      "category": "Courtesies & Respect",
+      "phrases": [
+        { "igbo": "Daalụ nke ukwuu", "english": "Thank you very much", "phonetic": "Dah-loo n-keh ook-woo" },
+        { "igbo": "Nnọọ", "english": "Welcome", "phonetic": "N-noh-oh" },
+        { "igbo": "Ka emesia", "english": "Goodbye / Until later", "phonetic": "Kah eh-meh-see-ah" }
+      ]
+    }
+  ],
+  "proverbs": [
+    {
+      "igbo": "Nwaanyi muta aju ugboro abuo, o mara ihe na-egbu ya n'isi.",
+      "literal": "If a woman prepares a head-pad twice, she knows what hurts her head.",
+      "meaning": "Experience teaches wisdom and caution in life.",
+      "theme": "Wisdom"
+    },
+    {
+      "igbo": "E mee ngwa ngwa, e meghara ọdachi.",
+      "literal": "When done quickly, disaster is averted.",
+      "meaning": "Prompt action solves problems before they escalate.",
+      "theme": "Action"
+    },
+    {
+      "igbo": "Onye na-amaghị ebe mmiri si maba ya agaghị ama ebe ọ kwụsịrị ịma ya.",
+      "literal": "A person who does not know where the rain began to beat him will not know where it stopped beating him.",
+      "meaning": "Know your roots and your journey to understand your destiny.",
+      "theme": "Heritage"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# Example Keystore configuration for Play Store release signing
+# Store your actual keystore in android/app/keystore/upload-keystore.jks and do not commit key.properties to git
+keyAlias=uzo_upload_key
+keyPassword=YourKeyPasswordHere
+storeFile=../keystore/upload-keystore.jks
+storePassword=YourStorePasswordHere

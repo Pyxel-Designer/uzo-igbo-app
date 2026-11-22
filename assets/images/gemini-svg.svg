@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  
+  <!-- 1. AKUPE FAN -->
+  <g id="akupe-fan" transform="translate(50, 20)">
+    <!-- Wooden Handle -->
+    <rect x="42" y="100" width="16" height="60" rx="8" fill="#8D6E63" />
+    <!-- Fan Leather / Body -->
+    <path d="M 50 110 C -10 110, -20 20, 50 10 C 120 20, 110 110, 50 110 Z" fill="#E53935" />
+    <!-- Geometric Inserts -->
+    <path d="M 50 100 C 10 100, 10 40, 50 30 C 90 40, 90 100, 50 100 Z" fill="#F4D03F" />
+    <path d="M 50 90 C 25 90, 30 50, 50 45 C 70 50, 75 90, 50 90 Z" fill="#58CC02" />
+    <!-- Stitched detail -->
+    <line x1="50" y1="10" x2="50" y2="110" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="6,4" />
+  </g>
+
+  <!-- 2. OJI (KOLA NUTS) -->
+  <g id="oji-kola" transform="translate(250, 40)">
+    <!-- Wooden Platter (Ọkwa Oji) -->
+    <ellipse cx="50" cy="90" rx="45" ry="18" fill="#5D4037" />
+    <ellipse cx="50" cy="85" rx="45" ry="18" fill="#795548" />
+    <!-- Nuts -->
+    <!-- Back Nut -->
+    <path d="M 35 85 C 30 65, 55 60, 60 75 Z" fill="#B71C1C" />
+    <!-- Front Left Nut -->
+    <path d="M 25 90 C 15 70, 45 65, 45 85 C 45 95, 30 100, 25 90 Z" fill="#E53935" />
+    <path d="M 35 75 L 35 90" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" /> <!-- Lobe line -->
+    <!-- Front Right Nut -->
+    <path d="M 75 90 C 85 70, 55 65, 55 85 C 55 95, 70 100, 75 90 Z" fill="#D32F2F" />
+    <path d="M 65 75 L 65 90" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" /> <!-- Lobe line -->
+  </g>
+
+  <!-- 3. ỌFỌ STICK -->
+  <g id="ofo-stick" transform="translate(450, 20)">
+    <!-- Main Branch Structure -->
+    <path d="M 40 10 L 60 10 C 65 50, 70 100, 65 150 L 35 150 C 30 100, 35 50, 40 10 Z" fill="#6D4C41" />
+    <path d="M 35 150 Q 50 160 65 150" fill="#4E342E" /> <!-- Bottom cap -->
+    <path d="M 40 10 Q 50 0 60 10" fill="#8D6E63" /> <!-- Top cap -->
+    
+    <!-- Tree Knots / Texture -->
+    <circle cx="48" cy="40" r="4" fill="#4E342E" />
+    <circle cx="55" cy="110" r="3" fill="#4E342E" />
+    
+    <!-- Tied Copper Wire / Twine Wraps -->
+    <rect x="37" y="60" width="26" height="8" rx="2" fill="#D35400" />
+    <rect x="38" y="70" width="24" height="8" rx="2" fill="#D35400" />
+    <rect x="37" y="80" width="26" height="8" rx="2" fill="#D35400" />
+    
+    <!-- Tied Cowrie Shells -->
+    <ellipse cx="25" cy="75" rx="8" ry="12" fill="#FFF8E1" />
+    <line x1="25" y1="68" x2="25" y2="82" stroke="#D7CCC8" stroke-width="2" /> <!-- Shell opening -->
+    <path d="M 37 75 L 33 75" stroke="#D35400" stroke-width="3" /> <!-- Tie string -->
+  </g>
+</svg>
