@@ -40,8 +40,8 @@ do
     esac
 done
 
-# This is reliable for Linux but maybe not Mac
-APP_HOME=$( cd "${APP_HOME:-./}.." && pwd -P ) || exit
+# Resolve APP_HOME to the android directory containing gradlew
+APP_HOME=$( cd "${APP_HOME:-./}" && pwd -P ) || exit
 
 APP_NAME="Gradle"
 APP_BASE_NAME=${0##*/}
